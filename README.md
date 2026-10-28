@@ -22,7 +22,7 @@ by Google.
 ## Install (unpacked, not on the Chrome Web Store)
 
 1. Download or clone this repository.
-2. Go to `brave://extensions` (or `chrome://extensions`).
+2. Go to `chrome://extensions`.
 3. Turn on **Developer mode** (top right).
 4. Click **Load unpacked** and select this project's folder.
 5. **Pin the toolbar icon**: click the puzzle-piece/extensions icon in the
@@ -35,7 +35,7 @@ by Google.
 Default: **Ctrl+Shift+Space** opens the popup.
 
 If it doesn't fire (another extension or app may already use that combo), go
-to `brave://extensions/shortcuts` and rebind it to whatever's free on your
+to `chrome://extensions/shortcuts` and rebind it to whatever's free on your
 machine.
 
 ## Related work
