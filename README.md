@@ -1,14 +1,14 @@
 # Paste-To-Search
 
-A small Brave/Chrome (Manifest V3) extension: paste or drop an image, optionally
-ask a question about it, and see Google's results. Inspired by on-phone visual
-search features, built as a learning project — not affiliated with or endorsed
+Paste-To-Search is a small Chrome extension, where you paste or drop an image, optionally
+ask a question about it, and see results fetched by Google. Inspired by on-phone visual
+search features, built as a learning project, not affiliated with or endorsed
 by Google.
 
 ## What it does
 
 - One image panel (paste with Ctrl+V, drag-and-drop, or choose a file) and one
-  Ask field — nothing else.
+  Ask field.
 - Pasting or dropping an image only shows a preview. It never searches
   automatically. Focus stays on the Ask field so you can type, then press
   **Search** or **Enter**.
@@ -42,23 +42,16 @@ machine.
 
 - **Chrome's built-in "Search image with Google Lens"** (right-click on a
   webpage image) — full Lens integration with a side panel and multisearch
-  follow-up questions. Chrome-only; not present in Brave as of this writing.
-- **Brave's built-in "Search image with Google"** (right-click on a webpage
-  image) — plain reverse image search, no follow-up question, and only works
-  on images already on a page, not clipboard content.
+  follow-up questions.
 - **Google Lens on the web** (`lens.google.com`, `images.google.com`) —
   supports pasting an image directly into the search box, but is a separate
   site you have to navigate to each time, not a one-keystroke popup.
-
-Paste-To-Search's niche is specifically: clipboard-first, one keystroke to
-open, works in Brave, and treats the question as a true optional follow-up
-rather than requiring a second box.
 
 ## Limitations (documented, not hidden)
 
 - **The image upload is unofficial.** Google doesn't publish a supported API
   for third-party extensions to submit a pasted image. This extension opens
-  Google Images and drives Google's own "search by image" panel — clicking
+  Google Images and drives Google's own "search by image" panel, clicking
   the camera icon and feeding your pasted image into Google's real file
   input, the same way your own file picker would. It does not post directly
   to Google's upload endpoint (an earlier version tried that and Google
@@ -125,4 +118,4 @@ rather than requiring a second box.
 ## License
 
 MIT — see `LICENSE`. Google Sans is licensed separately under the OFL; see
-`fonts/OFL.txt`.
+`fonts/OFL.txt`. Published by Abhipsit Hore on October 28, 2026.
