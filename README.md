@@ -58,8 +58,8 @@ machine.
   rejected it as a malformed request). Driving the real UI is more reliable,
   but Google's page has no stable public selectors, so this can still break
   if Google changes its layout. If it can't find Google's upload button,
-  it shows a brief on-page message saying so, rather than failing silently
-  — so a break looks like "try this instead" rather than a dead end.
+  it shows a brief on-page message saying so, rather than failing silently,
+  so a break looks like "try this instead" rather than a dead end.
 - **Google may show a login prompt or a CAPTCHA**, exactly as it can when you
   use Lens or reverse image search manually in a browser. This extension
   cannot bypass that.
