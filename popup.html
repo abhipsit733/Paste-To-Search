@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paste-To-Search</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <p class="title">Paste-To-Search</p>
+      <p class="subtitle">Designed to save you 5 seconds every time you're about to Google something.</p>
+    </div>
+
+    <div class="panel" id="dropzone" tabindex="0">
+      <img id="preview" alt="Pasted image preview" hidden />
+      <p class="hint" id="dropHint">Your image preview will appear here</p>
+      <input type="file" id="fileInput" accept="image/jpeg,image/png,image/svg+xml,image/avif,.jpg,.jpeg,.png,.svg,.avif" hidden />
+      <button type="button" id="chooseFileBtn" class="action-btn">Choose File</button>
+      <button type="button" id="clearImgBtn" class="action-btn" hidden>Remove File</button>
+      <p class="instructions">Paste an image, drop it here, or choose a file</p>
+      <p class="format-hint">(Only .jpg, .jpeg, .png, .avif and .svg formats are accepted)</p>
+    </div>
+
+    <div class="row">
+      <input type="text" id="askInput" placeholder="Ask a question" autocomplete="off" />
+    </div>
+
+    <p class="error" id="errorMsg"></p>
+
+    <div class="row">
+      <button type="button" id="searchBtn">
+        Search
+        <img class="btn-icon" src="assets/search-icon.png" alt="" />
+      </button>
+    </div>
+
+    <div class="footer-row">
+      <span class="footer-shortcut">Shortcut - Ctrl + Shift + Space</span>
+      <span class="footer">A small project by Abhipsit Hore</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
