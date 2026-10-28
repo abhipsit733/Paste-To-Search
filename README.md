@@ -67,13 +67,13 @@ machine.
   search" box has no stable public selector, so the content script tries a
   short list of likely matches and gives up quietly if none fit. If your
   question doesn't appear automatically, type it into Google's own search box
-  on the results page. It also doesn't auto-submit on purpose — a synthetic
+  on the results page. It also doesn't auto-submit on purpose, a synthetic
   Enter keypress was tried in an earlier version and produced a malformed
   request from Google, so the text is filled in and the real Enter press is
   left to you.
 - **The AI Overview / People also ask / Ask-anything declutter is cosmetic
   and experimental.** These are Google's own native results-page features,
-  not something this extension creates, so they can't truly be disabled —
+  not something this extension creates, so they can't truly be disabled,
   only hidden after the fact via a content script that matches on visible
   heading text (Google gives no stable selector for them either). It can
   occasionally hide too much or too little depending on how Google's page is
@@ -82,7 +82,7 @@ machine.
 - **No single-step redirect straight to combined image+text results.** This
   was considered and isn't technically possible without either image
   hosting (which this project deliberately avoids) or Google generating a
-  results token in advance (which it doesn't — that token only exists after
+  results token in advance (which it doesn't, that token only exists after
   Google has processed an uploaded image). The images.google.com step is a
   same-tab, near-instant pass-through, not a separate page you interact
   with, but it can't be skipped outright.
@@ -95,7 +95,7 @@ machine.
 ## Ethics
 
 - Your pasted image is sent **only to Google**, and only when you press
-  Search — never automatically, never to any third-party server, and never
+  Search, never automatically, never to any third-party server, and never
   stored outside your own browser's local extension storage during the
   handoff between the popup and the helper tab.
 - This project automates an **unofficial, undocumented** Google endpoint.
@@ -107,7 +107,7 @@ machine.
 
 ## Credits
 
-- UI typeface: Google Sans, licensed under the SIL Open Font License 1.1 —
+- UI typeface: Google Sans, licensed under the SIL Open Font License 1.1,
   see `fonts/OFL.txt`. Only the Regular, Medium, and Bold static weights are
   bundled (the full family download includes 20 files and a variable-font
   version; trimmed here to keep the repo lean, since only those three are
