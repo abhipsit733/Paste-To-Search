@@ -41,9 +41,9 @@ machine.
 ## Related work
 
 - **Chrome's built-in "Search image with Google Lens"** (right-click on a
-  webpage image) — full Lens integration with a side panel and multisearch
+  webpage image), full Lens integration with a side panel and multisearch
   follow-up questions.
-- **Google Lens on the web** (`lens.google.com`, `images.google.com`) —
+- **Google Lens on the web** (`lens.google.com`, `images.google.com`), 
   supports pasting an image directly into the search box, but is a separate
   site you have to navigate to each time, not a one-keystroke popup.
 
